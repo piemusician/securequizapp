@@ -13,7 +13,6 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
                                      #The value should be set in Heroku (Settings->Config Vars).  
                                      #To run locally, set in env.sh and include that file in gitignore so the secret key is not made public.
 def store_Answers(answer, x):
-    print("yeet")
     if 'answer' + str(x) not in session:
         session['answer' + str(x)] = answer
     else:
@@ -37,7 +36,6 @@ def renderPage1():
 
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
-    print("yote")
     store_Answers(request.form['answer1'], 1)
     return render_template('page2.html')
 
@@ -50,7 +48,6 @@ def renderPage3():
 def renderFinal():
     score=0
     store_Answers(request.form['answer3'], 3)
-    print('Biillie Eyelasher')
     if session['answer1'] == 'Watches' or 'watches':
         score = score +1       
     if session['answer2'] == 'December 18, 2001' or '12/18/01':
