@@ -1,14 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 body {
 
-    background-color: #ffffcc;
+    background-color: #AB67CB;
     color: black;
 }
 
 div#footer {
-    
-    font-size: 0.8em;
-    background-color: #ccffff;
-    border: 4px solid grey;
-    margin-top: 3em;
-    padding: 1em;
+	max-width: 700px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: #ffffff;
+	margin: 40px auto;
+	border-radius: 10px;
+}
+
+h1#subhomeT {
+	padding-left: 3.8em;
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	font-size: 4em;
+}
+
+div#subhome {
+	max-width: 700px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: #ffffff;
+	margin: 40px auto;
+	border-radius: 10px; 
+}	
+
+#subbtn {
+	padding-left: 18em;
+}
+
+#btn {
+  	padding-left: 18em;
+}
+
+.button {
+	width: 105px;
+	height: 20px;
+	line-height: 20px;
+	padding-bottom: 2px;
+	vertical-align: middle;
+	font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif;
+  	font-size: 13px;
+	font-weight: bold;
+  	text-transform: none;
+	border: 1px solid transparent;
 }

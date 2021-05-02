@@ -1,15 +1,14 @@
 {% extends "layout.html" %}
 
-{% block title %}Page 2: Ask for your favorite color{% endblock %}
+{% block title %}Page 2: Second question{% endblock %}
 
 {% block content %}
-  <h1>Page 2: Ask for favorite color</h1>
+  <h1>2. When is Billie Eilish's date of birth?</h1>
 
- <form action={{ url_for("renderPage3") }} method="POST">
-  Favorite Color:<br>
-  <input type="text" name="favoriteColor">
-  <input type="submit" value="Submit">
- </form> 
+  <form action = {{url_for('renderPage3')}} method = 'POST'>
+    <input type="text" name="answer2">
+    <input type = 'submit' value = 'Submit'>
+  </form>
 
 
 
