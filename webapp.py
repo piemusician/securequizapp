@@ -48,13 +48,13 @@ def renderPage3():
 def renderFinal():
     score=0
     store_Answers(request.form['answer3'], 3)
-    if session['answer1'] == 'Watches' or 'watches':
+    if session['answer1'] == 'Watches' or session['answer1'] == 'watches':
         score = score +1       
-    if session['answer2'] == 'December 18, 2001' or '12/18/01':
+    if session['answer2'] == 'December 18, 2001' or session['answer2'] == '12/18/01':
         score = score +1
-    if session['answer3'] == 'Ocean Eyes' or 'ocean eyes':
+    if session['answer3'] == 'Ocean Eyes' or session['answer3'] == 'ocean eyes':
         score = score +1
-    return render_template('final.html' , finalScore=score)
+    return render_template('final.html', finalScore=score)
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False)
